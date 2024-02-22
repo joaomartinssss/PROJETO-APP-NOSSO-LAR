@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Supermercado Nosso Lar</title>
+    <link rel="stylesheet" href="./NOSSO_LAR.CSS" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- link dos icones acima -->
+    <link rel="stylesheet" href="./src/notie-master/dist/notie.min.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="title">Bem-vindo ao Supermercado Nosso Lar!</h1>
+      <section id="search-container">
+        <!-- campo azul do topo abaixo-->
+        <div class="input-wrapper custom-product-wrapper" hidden>
+          <input
+            type="text"
+            id="custom-product-name"
+            placeholder="Nome do produto..."
+          />
+          <input type="text" id="custom-product-price" placeholder="Preço..." />
+          <button id="custom-product-add-button">Adicionar</button>
+        </div>
+        <div class="input-wrapper product-name-wrapper">
+          <input
+            type="text"
+            id="pesquisa-nome-produto"
+            placeholder="Pesquisar produtos..."
+          />
+          <button id="search-button">
+            <i class="bi bi-search"></i>
+          </button>
+        </div>
+        <button id="cart-button"><i class="bi bi-cart"></i></button>
+        <button id="user-button"><i class="bi bi-person-fill"></i></button>
+      </section>
+      <section>
+        <div id="carrinho-previsao">
+          <button id="cancel-button"><i class="bi bi-x-lg"></i></button>
+          <p>Carrinho</p>
+          <p id="carrinho-quantidade">0 itens</p>
+          <p id="carrinho-valor">R$ 0,00</p>
+        </div>
+      </section>
+      <div class="guia">
+        <button>Promoções</button>
+        <button>Produtos</product-imagebutton>
+        <button>Lojas</button>
+        <button>Sobre</button>
+      </div>
+    </header>
+    <nav></nav>
+    <main>
+      <section>
+        <div class="product-container" id="products-container">
+          <div id="">
+            <img
+              src=""
+              alt=""
+              class="product-image"
+            />
+          </div>
+
+          <div class="product-info">
+            <p class="product-name"></p>
+            <p class="product-price"></p>
+          </div>
+          <!-- <button class="add-button">Adicionar</button> -->
+        </div>
+      </section>
+      <section id="produtos">
+        <h2>Nossos Produtos</h2>
+        <div class="botao-dos-produtos">
+          <button>Bebidas</button>
+          <button>Hortifruti</button>
+          <button>Mercearia</button>
+          <button>Açougue</button>
+          <button>Rotisseria</button>
+          <button>Laticínios</button>
+          <button>Congelados</button>
+          <button>Japonês</button>
+          <button>Limpeza</button>
+          <button>Higiene</button>
+          <button>Churrasco</button>
+          <button>Bomboniere</button>
+          <button>Doces</button>
+          <button>Bazar</button>
+          <button>Automotivo</button>
+          <button>Utilidades</button>
+          <button>Padaria</button>
+          <button>Frios</button>
+          <button>Bebês</button>
+          <button>Petshop</button>
+          <button>Utilidades</button>
+        </div>
+      </section>
+    </main>
+    <section id="sobre-o-mercado">
+      <h2>Sobre o Supermercado</h2>
+      <p>
+        O Supermercado Nosso Lar é um estabelecimento familiar que oferece os
+        melhores produtos da região aos nossos clientes. Nosso objetivo é
+        proporcionar uma experiência de compras agradável e conveniente, com
+        preços acessíveis e uma ampla variedade de opções.
+      </p>
+      <p>Suburbano: (11) 4142-8317</p>
+      <p>Vitápolis: (11) 4141-2746</p>
+      <footer><p>&copy; 2023 Supermercado Nosso Lar</p></footer>
+    </section>
+    <!-- <section id="promocoes">
+        <h2 class="title">Promoções</h2>
+        <ul>
+          <li>Descontos em Frutas e Verduras</li>
+          <li>Promoção em Carnes e Ave</li>
+          <li>Laticínios em oferta</li>
+        </ul>
+      </section> -->
+    <script src="nossoLar.JS"></script>
+  </body>
+</html>
